@@ -8,33 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Little Lemon Restaurant Design System */
+    --background: 45 100% 98%;
+    --foreground: 25 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 100% 99%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 100% 99%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Lemon Yellow Primary */
+    --primary: 48 100% 55%;
+    --primary-foreground: 25 25% 15%;
+    --primary-glow: 48 100% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Fresh Herb Green Secondary */
+    --secondary: 145 60% 45%;
+    --secondary-foreground: 45 100% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Warm Mediterranean Tones */
+    --muted: 45 40% 95%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 25 75% 60%;
+    --accent-foreground: 45 100% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 100% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 30% 88%;
+    --input: 45 30% 92%;
+    --ring: 48 100% 55%;
+
+    /* Custom Little Lemon Colors */
+    --lemon-bright: 48 100% 55%;
+    --lemon-soft: 48 80% 85%;
+    --herb-green: 145 60% 45%;
+    --herb-light: 145 40% 85%;
+    --terracotta: 25 75% 60%;
+    --warm-white: 45 40% 98%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--lemon-bright)), hsl(var(--herb-green)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--warm-white)), hsl(var(--lemon-soft)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--terracotta)), hsl(var(--accent)));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(var(--lemon-bright) / 0.15);
+    --shadow-card: 0 8px 32px hsl(var(--herb-green) / 0.12);
+    --shadow-glow: 0 0 30px hsl(var(--lemon-bright) / 0.25);
 
     --radius: 0.5rem;
 
@@ -56,33 +79,48 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode for Little Lemon - warm evening atmosphere */
+    --background: 25 20% 8%;
+    --foreground: 45 40% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 15% 12%;
+    --card-foreground: 45 40% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 15% 12%;
+    --popover-foreground: 45 40% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 48 90% 65%;
+    --primary-foreground: 25 20% 8%;
+    --primary-glow: 48 80% 75%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 145 40% 35%;
+    --secondary-foreground: 45 40% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 10% 15%;
+    --muted-foreground: 45 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 25 60% 50%;
+    --accent-foreground: 45 40% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 45 40% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 25 15% 20%;
+    --input: 25 15% 18%;
+    --ring: 48 90% 65%;
+
+    /* Dark mode custom colors */
+    --lemon-bright: 48 90% 65%;
+    --lemon-soft: 48 50% 25%;
+    --herb-green: 145 40% 35%;
+    --herb-light: 145 30% 25%;
+    --terracotta: 25 60% 50%;
+    --warm-white: 45 20% 15%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(var(--lemon-bright)), hsl(var(--herb-green)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--warm-white)), hsl(var(--lemon-soft)));
+    --shadow-soft: 0 4px 20px hsl(var(--lemon-bright) / 0.2);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
